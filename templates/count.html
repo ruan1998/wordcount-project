@@ -1,0 +1,11 @@
+<h1>There are {{count}} words in your text</h1>
+
+<a href="{% url 'home' %}">home page</a>
+<h1>Your Text:</h1>
+{{fulltext}}
+
+<h1>worddictionary</h1>
+{% for key, value in worddictionary %}
+{{key}} - {{value}}
+<br>
+{%  endfor %}
